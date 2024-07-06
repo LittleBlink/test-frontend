@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+header {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100vw;
+  padding: 10px 20px;
+}
+
+.headerContent {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  color: #333;
+}
+
+section {
+  max-width: 80vw;
+  margin: 40px auto;
+}
+
+#formContent,
+.resultContent {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 20px 10px;
+}
+
+#formContent h1 {
+  text-align: center;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0;
+}
+
+input {
+  border: none;
+  border-bottom: 2px #333 solid;
+  background: none;
+  width: 100%;
+  margin: auto;
+  line-height: 20px;
+  font-size: 1em;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px #f3f3f3 solid;
+  transition: 0.3s;
+}
+
+select {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: #ffffff98;
+  padding: 10px;
+}
+
+#simularBtn,
+#simularNBtn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 10px;
+  background: #ffffff7e;
+  border: 2px #fff solid;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+#simularBtn:hover,
+#simularNBtn:hover {
+  border: 2px #333 solid;
+  color: #fff;
+  background: transparent;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.resultContent p {
+  margin: 10px;
+}
